@@ -1,5 +1,6 @@
-let minutos = parseFloat(prompt("Ingrese los minutos"))
-let horas = minutos / 60
+let minutos = parseFloat(prompt("Ingrese minutos"))
+let horas = parseInt(minutos / 60)
 
-let residuo = horas 
-alert("Las horas son: " + horas)
+let minuto = minutos - (horas * 60)
+alert(`${horas} horas y ${minuto} minutos`)
+
